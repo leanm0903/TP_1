@@ -65,9 +65,11 @@ body {
     flex-direction: row;
 
     gap: 18px;
-    align-items: center;
+    align-items: start;
     margin: 0;
     padding: 0;
+}
+.nav-links ul {
     list-style: none;
 }
 
@@ -118,31 +120,10 @@ body {
     }
 
     .nav-links {
-        width: 100%;
         display: none;
-        flex-direction: column;
-        gap: 8px;
-        margin: 0;
-        padding: 12px 0;
-        list-style: none;
-    }
-
-    .nav-toggle:checked ~ .nav-links {
-        display: flex;
-    }
-
-    .nav-links li a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .login {
-        width: 100%;
-        justify-content: center;
-        padding: 10px 0;
     }
 }
+
 
 @media (min-width: 1025px) {
     .burguer {
