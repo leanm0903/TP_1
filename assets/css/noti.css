@@ -14,21 +14,43 @@ body {
     background: var(--bg);
     color: var(--text);
 }
+main{
+    padding: 15px!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 12px 0;
+}
 
 .site-nav {
     border-bottom: 1px solid #eee;
 }
 
 .nav-bar {
-    max-width: 1100px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     padding: 12px 16px;
-    gap: 12px;
+    gap: 12px;        
+}
+.publicidad {
+    padding: 30px;
+    margin-bottom: 24px;
+    order: 3;
 }
 
+.publicidad img {
+    height: 10vh;
+    margin: 0 auto;
+    height: auto;
+}
 .brand {
     display: flex;
     align-items: center;
@@ -42,6 +64,7 @@ body {
 }
 
 .burguer {
+    background: red;
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,16 +124,7 @@ body {
     border: 0;
 }
 
-    .nav-bar {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-    }
 
-    .brand {
-        width: 100%;
-        justify-content: space-between;
-    }
 
     .burguer {
         display: inline-flex;
@@ -121,26 +135,53 @@ body {
     }
     .nav-toggle:checked ~ .nav-links {
         display: flex;
-        flex-direction: column; /* Apila los elementos verticalmente */
+        flex-direction: column;
         width: 100%;
     }
 
-
 @media (min-width: 1025px) {
-    .burguer {
-        display: none;
+    main{
+    padding: 15px!important;
+    display: flex;
+    flex-direction: row ;
+    justify-content: start;
+    align-items: start;
     }
 
-    .nav-links {
+.burguer {
         display: none;
     }
-    .nav-bar {
-    max-width: 1100px;
-    margin: 0 auto;
+.publicidad {
+    width: 20%;
+    order :none
+}
+.first-container{
+    width: 50%;
+    padding: 12px;
+}
+.second-container{
+    width: 30%;
+    padding: 30px;
+}
+.nav-links{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row ;
+    gap: 12px;
+    height: 100%;
+}
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
     padding: 12px 16px;
     gap: 12px;
-    }
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding: 12px 16px;
+    gap: 12px;
+}
 }
