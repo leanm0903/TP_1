@@ -1,0 +1,32 @@
+#formulario-suscripcion {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+.error-msg {
+    color: red;
+    font-size: 0.9em;
+    height: 10px;
+    font-size: 0.9em; 
+}
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
